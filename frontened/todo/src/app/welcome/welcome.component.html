@@ -1,0 +1,14 @@
+<div class="welcome">
+      Welcome to TODO App
+      
+</div>
+<p [class.gray]='welcome'>Welcome</p>
+
+<ul *ngIf="users">
+      <li *ngFor="let user of users._body.data">
+            <img [src]='user.avatar'/>
+            <p>{{user.first_name}} {{last_name}}</p>
+      </li>
+</ul>
+
+<button (click)="getUsers()">Home</button>
