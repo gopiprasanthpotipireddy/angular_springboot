@@ -12,11 +12,11 @@ users : Object;
   constructor(private userservice:UserdataService) { }
 
   ngOnInit() {
-    this.userservice.getUsers().subscribe(
-      data=>{
-        this.users=data.text()
-        console.log(data.text())
-      })
+    this.userservice.getUsers().subscribe(data=>{
+      //console.log(data.json())
+      this.users=data.json()
+      });
+      
     }
 
  getUsers(){

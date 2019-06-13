@@ -2,12 +2,12 @@
       Welcome to TODO App
       
 </div>
-<p [class.gray]='welcome'>Welcome</p>
+<p [class.gray]='welcome'>Developers</p>
 
 <ul *ngIf="users">
-      <li *ngFor="let user of users._body.data">
+      <li *ngFor="let user of users.data">
             <img [src]='user.avatar'/>
-            <p>{{user.first_name}} {{last_name}}</p>
+            <p>{{user.first_name}} {{user.last_name}}</p>
       </li>
 </ul>
 
