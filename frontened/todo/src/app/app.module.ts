@@ -10,8 +10,8 @@ import { TodoListComponent } from './todo-list/todo-list.component';
 import { FooterComponent } from './footer/footer.component';
 import { WidgetsComponent } from './widgets/widgets.component';
 import { NavComponent } from './nav/nav.component';
-
-
+import {ReactiveFormsModule} from '@angular/forms';
+import { ContactComponent } from './contact/contact.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,13 +19,15 @@ import { NavComponent } from './nav/nav.component';
     TodoListComponent,
     FooterComponent,
     WidgetsComponent,
-    NavComponent
+    NavComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpModule
+    HttpModule,    
+    ReactiveFormsModule
   ],
   providers: [TodoService],
   bootstrap: [AppComponent]
